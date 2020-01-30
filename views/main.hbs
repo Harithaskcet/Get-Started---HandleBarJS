@@ -1,0 +1,22 @@
+    <h1>Excited to learn</h1>
+    <h2>HandleBar</h2>
+    <h1>table</h1>
+    {{>table}}
+    <h1>list</h1>
+    {{#if show}}
+        {{>list}}
+    {{/if}}
+    <h3>function call used</h3>
+        <table class="tableColor">
+        <tr>
+        <th>Name</th>
+        <th>JobType</th>
+        </tr>
+    {{#each proPlayer}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.jobType}}</td>
+        </tr>
+    {{/each}}
+        </table>
+    
